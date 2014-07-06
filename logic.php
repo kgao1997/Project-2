@@ -13,7 +13,7 @@ $wordsarray[2] = "Carry";
 $wordsarray[3] = "Dingerdonger";
 $wordsarray[4] = "Evilgeniuses";
 $wordsarray[5] = "Fishtail";
-$wordsarray[6] = "GreenLine";
+$wordsarray[6] = "Green";
 $wordsarray[7] = "Highlander";
 $wordsarray[8] = "Icarus";
 $wordsarray[9] = "Jack";
@@ -37,9 +37,9 @@ $wordsarray[25] = "Zebrahead";
 //Begin test code here
 
 $passwordlength = $_POST["number"];
-//for loop to print out password
+//while loop to print out password
 $intcount = 0;
-$intposition = 0
+$intposition = 0;
 while($intcount < $passwordlength)
 {
   $intposition = rand(0,25);
