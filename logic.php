@@ -1,6 +1,6 @@
 <html>
 <body>
-Your password is <?php echo $_POST["number"]; ?>
+Your password is 
 
 
 
