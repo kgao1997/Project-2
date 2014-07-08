@@ -36,46 +36,9 @@ $wordsarray[25] = "Zebrahead";
 //End Word Array Here
 //Begin test code here
 
-$passwordlength = $_POST["number"];
-if($_POST["Yes I want a number"]  && $_POST["Yes I want a special symbol"]){
-echo @;
-$intcount = 0;
-$intposition = 0;
-while($intcount < $passwordlength)
-{
-  $randomnumber = rand(0,9);
-  $intposition = rand(0,25);
-  echo $wordsarray[$intposition];
-  echo $randomnumber;
-  $intcount++;
-}
-}
-elseif($_POST["Yes I want a number"] && !$_POST["Yes I want a special symbol"])
-{
-$intcount = 0;
-$intposition = 0;
-while($intcount < $passwordlength)
-{
-  $randomnumber = rand(0,9);
-  $intposition = rand(0,25);
-  echo $wordsarray[$intposition];
-  echo $randomnumber;
-  $intcount++;
-}
-}
-elseif(!$_POST["Yes I want a number"] && $_POST["Yes I want a special symbol"])
-{
-echo @;
-$intcount = 0;
-$intposition = 0;
-while($intcount < $passwordlength)
-{
-  $intposition = rand(0,25);
-  echo $wordsarray[$intposition];
-  $intcount++;
-}
 
 //while loop to print out password
+$passwordlength = $_PUSH["number"];
 $intcount = 0;
 $intposition = 0;
 while($intcount < $passwordlength)
