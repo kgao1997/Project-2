@@ -38,7 +38,7 @@ $wordsarray[25] = "Zebrahead";
 
 
 //while loop to print out password
-$passwordlength = $_PUSH["number"];
+$passwordlength = $_POST["number"];
 $intcount = 0;
 $intposition = 0;
 while($intcount < $passwordlength)
